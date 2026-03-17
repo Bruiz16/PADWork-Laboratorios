@@ -4,6 +4,9 @@ git status
 # 2. Agregar los cambios
 git add notebooks/lab_01.ipynb
 
+git add .
+git commit -m "descripción del cambio"
+
 # 3. Commit con mensaje descriptivo
 git commit -m "lab01: descripción de lo que hiciste"
 
