@@ -1,0 +1,198 @@
+Parcial PAD: 
+
+1. PRIMEROS PASOS: 
+
+type(12) = int, type("Hello") = str
+Convierte un entero en flotante: float(2) = 2.0
+Convierte un flotante en cadena: str(2.1) = "2.1"
+Entrada de un valor = input("Please enter a number: ")
+Eliminar una variable: del myFavouriteBand
+
+2. STRINGS: 
+
+String = Cadena Ej. name = "Michael Jackson"
+Positivo: [=], Negativo: [-1]
+Ver en pantalla: print(name[0])
+Slicing: Name[0:4] = Mich
+Stride: Name[::2] = McalJcsn, name[0:5:2] = Mca
+statement = name + "is the best" = 'Michael Jacksonis the best'
+3 * "Michael Jackson" = 'Michael JacksonMichael JacksonMichael Jackson'
+print(" Michael Jackson \n is the best" ) = Michael Jackson / is the best
+print(" Michael Jackson \t is the best" ) = Michael Jackson 	 is the best
+b = a.upper() = Todo mayúscula
+b = a.replace('Michael', 'Janet') = 'Janet Jackson is the best'
+name.find('Jasdfasdasdf') = -1
+
+3. TUPLAS y SET:
+
+Un set no puede contener elementos repetidos
+Ordenar elementos: sorted(Ratings)
+Encontrar la primera posición de un elemento: genres_tuple.index("disco") = 7
+Hacer set una lista: album_list = [ "Michael Jackson", "Thriller", 1982, "00:42:19", "Pop, Rock, R&B", 46.0, 65, "30-	Nov-82", None, 10.0] = album_set = set(album_list)
+Agregar un elemento a un set = A.add("NSYNC")
+Remover un elemento de un set = A.remove("NSYNC")
+Para saber si un elemento está en el set = "AC/DC" in A = True
+Intersección de 2 set = intersection = album_set1 & album_set2 ó album_set1.intersection(album_set2)
+Diferencia el set 1 del 2 = album_set1.difference(album_set2)
+Unión de set = album_set1.union(album_set2)
+
+4. LISTAS: 
+
+Definir una lista: L = ["1", 1.1, 1], Positivo: desde 0 y Negativo: desde -1.
+List slicing: L[3:5]
+Añadir elementos: L = [ "Michael Jackson", 10.2], L.extend(['pop', 10])
+Añadir 1 elemento: L.append(['pop', 10]), lo añade como 1 elemento lista.
+Cambiar un elemento de la lista: A[0] = 'hard rock'
+Eliminar un elemento de la lista: del(A[0])
+Split the string, default is by space: 'hard rock'.split() = ["hard", "rock"]
+Split por coma: 'A,B,C,D'.split(',')
+Para clonar una lista: B = A[:] (Nueva lista)
+
+5. DICCIONARIOS: 
+
+Clave valor, desde key 1.
+Ej. = Dict = {"key1": 1, "key2": "2", "key3": [3, 3, 3], "key4": (4, 4, 4), ('key5'): 5, (0, 1): 6}
+Dar una clave y recibir un valor = release_year_dict['Thriller'] = "1982"
+Llaves de un diccionario = release_year_dict.keys() 
+Valores de un diccionario = release_year_dict.values()
+Añadir otro elemento = release_year_dict['Graduation'] = '2007'
+Eliminar un elemento = del(release_year_dict['Thriller'])
+El elemento esta dentro del diccionario = 'The Bodyguard' in release_year_dict = True
+
+6. CONDICIONES:
+
+equal: ==
+not equal: !=
+greater than: >
+less than: <
+greater than or equal to: >=
+less than or equal to: <=
+
+if age > 18:	print("you can enter" )
+elif age == 18:	print("go see Pink Floyd")
+else:	print("go see Meat Loaf" )
+
+Operadores lógicos: and, or, not
+
+if(album_year > 1979) and (album_year < 1990):
+    print ("Album year was in between 1980 and 1989")
+
+if not (album_year == 1984):
+    print ("Album year is not 1984")
+
+7. EXCEPCIONES: 
+
+# potential code before try catch
+try:
+    # code to try to execute
+except:
+    # code to execute if there is an exception
+else:
+    # code to execute if there is no exception
+finally:
+    # code to execute at the end of the try except no matter what
+# code that will still execute if there is an exception
+
+8. CICLOS: 
+
+--FOR--
+dates = [1982,1980,1973]
+N = len(dates)
+
+for i in range(N):
+    print(dates[i])
+
+
+squares = ['red', 'yellow', 'green', 'purple', 'blue']
+
+for i in range(0, 5):
+    print("Before square ", i, 'is',  squares[i])
+    squares[i] = 'white'
+    print("After square ", i, 'is',  squares[i])
+
+
+squares=['red', 'yellow', 'green', 'purple', 'blue']
+
+for i, square in enumerate(squares):
+    print(i, square)
+
+
+--WHILE--
+
+dates = [1982, 1980, 1973, 2000]
+
+i = 0
+year = dates[0]
+
+while(year != 1973):    
+    print(year)
+    i = i + 1
+    year = dates[i]
+    
+
+print("It took ", i ,"repetitions to get out of loop.")
+
+
+9. FUNCIONES: 
+
+def Equation(a,b):
+    c = a + b + 2 * a * b - 1
+    if(c < 0):
+        c = 0 
+    else:
+        c = 5
+    return(c)
+
+album_ratings = [10.0, 8.5, 9.5, 7.0, 7.0, 9.5, 9.0, 9.5] 
+print(album_ratings)
+
+sum(album_ratings) = 70
+
+len(album_ratings) = 8 
+
+
+
+artist = "Michael Jackson"
+
+def printer(artist):
+    global internal_var 
+    internal_var= "Whitney Houston"
+    print(artist,"is an artist")
+
+printer(artist) 
+printer(internal_var)
+
+
+10. LEER ARCHIVOS EN PYTHON
+
+
+Open File: 
+
+with open(example1, "r") as file1:
+    FileContent = file1.read()
+    print(FileContent)
+
+
+Leer primera linea de un archivo:
+
+with open(example1, "r") as file1:
+    print("first line: " + file1.readline())
+
+
+Ieterar en un archivo para immprimir sus lineas:
+
+with open(example1,"r") as file1:
+        i = 0;
+        for line in file1:
+            print("Iteration", str(i), ": ", line)
+            i = i + 1
+
+
+
+
+
+
+
+
+
+
