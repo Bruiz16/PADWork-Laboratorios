@@ -188,6 +188,8 @@ with open(example1,"r") as file1:
             i = i + 1
 
 
+11. ESCRIBIR ARCHIVOS: 
+
 
 
 
