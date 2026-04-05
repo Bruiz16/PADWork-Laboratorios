@@ -1,14 +1,19 @@
 # 1. Ver qué archivos cambiaron
-git status
+    git status
 
-# 2. Agregar los cambios
-git add notebooks/lab_01.ipynb
+# 2. Agregar los cambios archivo por archivo y commit de ese archivo
+    git add notebooks/lab_01.ipynb
+    git commit -m "lab01: descripción de lo que hiciste"
 
-git add .
-git commit -m "descripción del cambio"
-
-# 3. Commit con mensaje descriptivo
-git commit -m "lab01: descripción de lo que hiciste"
+# 3. Agregar todos los cambios y commit de todos los archivos
+    git add .
+    git commit -m "descripción del cambio"
 
 # 4. Subir a GitHub
-git push
+    git push
+
+# 5. Activar ambiente virtual
+    .venv\Scripts\activate
+
+# 6. Desactivar el ambiente
+    deactivate
